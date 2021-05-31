@@ -10,7 +10,9 @@ const jwt = require('jsonwebtoken')
 const app = express();
 const {requireAuth, checkUser}=require('./middleware/authmiddleware');
 app.set('view engine','ejs');
-app.listen(8000);
+// app.listen(8000);
+const port=process.env.PORT||5000
+app.listen(`${port}`);
 
 
 app.use(express.static('publik'));
