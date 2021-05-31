@@ -54,7 +54,7 @@ app.get('/Arrays',requireAuth,(req,res)=>{
 });
 app.get('/Backtracking',requireAuth,(req,res)=>{
     // res.redirect('/blogs');
-    res.render('Backtracking');
+    res.render('BackTracking');
 });
 app.get('/BitManipulation',requireAuth,(req,res)=>{
     // res.redirect('/blogs');
